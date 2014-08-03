@@ -38,7 +38,7 @@ public class JoinCommand{
 		if (client.getTeam().equals(team)) {
 			sender.sendMessage(ChatColor.RED + "You are already on that team!");
 		} else {
-			Rixor.broadcast(team.getColor()+sender.getName()+ChatColor.GRAY+" has joined the "+team.getColor()+team.getDisplayName()+ChatColor.GRAY+".");
+			Rixor.broadcast();
 	    }
 		client.setTeam(team);
 		((Player) sender).setScoreboard(team.getMap().getBoard());
