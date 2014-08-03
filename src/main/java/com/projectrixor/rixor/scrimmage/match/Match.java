@@ -344,7 +344,7 @@ public class Match {
 			}
 		} else {
 			if(timing % 1 == 0) {
-				String time = ChatColor.AQUA + "Time Elapsed: " + ChatColor.RED + "";
+				String time = ChatColor.AQUA + "Time Elapsed: " + ChatColor.GREEN + "";
 				time += ConversionUtil.formatTime(getTiming());
 				for (Player Online : Bukkit.getOnlinePlayers()) {
 					BarAPI.setMessage(Online, time);
